@@ -1,0 +1,560 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #020403;
+  margin: 0;
+}
+
+/* Nav ------------------------------------------------------------------------*/
+
+.nav {
+  width: 100%;
+  height: 62px;
+  background-color: #000000ee;
+}
+
+.nav-container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: fit-content;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 15px 0;
+  color: #363636;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-input:checked+nav-menu {
+  background: #000000;
+}
+
+.nav-label,
+.nav-input {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.nav-menu a {
+  transition: all 300ms ease;
+}
+
+.nav-menu a:hover {
+  text-shadow: 1px 1px 3px #ffffffd8;
+}
+
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+
+  .nav-item {
+    color: #dbdbdb;
+  }
+
+  .nav-label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 62px;
+    bottom: 0;
+    background: #000000f3;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+  }
+
+  .nav-input:checked+.nav-menu {
+    clip-path: circle(100% at center);
+  }
+}
+
+/* Foto -------------------------------------------------------------------------*/
+
+.photo {
+  margin: 67px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#personal-photo {
+  height: auto;
+  width: 200px;
+}
+
+/* Presentacion -------------------------------------------------------------------*/
+
+.name {
+  display: flex;
+  justify-content: center;
+  color: #adadad;
+  height: 28px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.presentation {
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Iconos Web --------------------------------------------------------------------*/
+
+.web-pages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.web-pages a {
+  width: 40px;
+}
+
+.web-pages img {
+  width: 100%;
+  height: auto;
+  transition: all 400ms ease;
+}
+
+.web-pages img:hover {
+  transform: translateY(-7%);
+}
+
+.subsection {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subtitles {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* About -----------------------------------------------------------------------*/
+
+#About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  width: 90%;
+  height: 100%;
+  margin-top: 0;
+}
+
+.about-me {
+  display: flex;
+  color: #adadad;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Habilides ---------------------------------------------------------------------*/
+
+.hability {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.hability-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.habilities1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.habilities1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.habilities2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.habilities2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-top: 15px;
+}
+
+.hability-icons>div {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hab img {
+  width: 40%;
+  height: auto;
+  transition: all 350ms ease;
+}
+
+.hab img:hover {
+  transform: translateY(-3%);
+}
+
+.space {
+  height: 50px;
+}
+
+/* Experiencia ------------------------------------------------------------------*/
+
+.experience {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.exp-subcontainer {
+  display: flex;
+  color: #ffffff;
+  margin: 5px 0;
+  gap: 2rem;
+}
+
+.date {
+  color: #adadad;
+}
+
+.span-experience {
+  color: #adadad;
+}
+
+.date-container {
+  height: 45px;
+  width: 30%;
+}
+
+.exp-description {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-description>p {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-description>p>span {
+  padding: 0;
+}
+
+.exp-borders {
+  border-bottom: solid 1px #1f1f1f;
+  padding: 5px 0 5px 0;
+  margin: 0;
+}
+
+/* Proyects --------------------------------------------------------------------*/
+
+.portafolio {
+  color: #ffffff;
+  margin: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.images>img {
+  margin: 20px;
+  width: 90%;
+  height: auto;
+}
+
+/* Footer ----------------------------------------------------------------------*/
+
+footer {
+  background-color: #141414;
+}
+
+.contact {
+  color: #ffffff;
+  margin: 0 0 10px 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contacts-container {
+  display: flex;
+}
+
+.Phone {
+  color: #adadad;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Phone>p>span {
+  color: #adadad;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.phone-container {
+  width: 60px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-container img {
+  width: 100%;
+  height: auto;
+}
+
+.mail-container {
+  width: 60px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-container img {
+  width: 100%;
+  height: auto;
+}
+
+.Email {
+  color: #adadad;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Email>p>span {
+  color: #adadad;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.made-love {
+  color: #adadad;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/*Desktop -----------------------------------------------------------------------*/
+
+@media (min-width: 769px) {
+  .photo {
+    margin: 70px 0;
+  }
+
+  #personal-photo {
+    width: 300px;
+  }
+
+  .subsection {
+    font-size: 20px;
+  }
+
+  .name {
+    height: 30px;
+  }
+
+  .about-me {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .web-pages {
+    gap: 5rem;
+  }
+
+  .web-pages img {
+    width: 60px;
+    height: auto;
+  }
+
+  .subtitles {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
+
+  .border1 {
+    width: 80px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  .habilities1 {
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .hability-icons {
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .habilities2 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hab img {
+    width: 20%;
+  }
+
+  .creation {
+    width: 20%;
+  }
+
+  .experience-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .exp-subcontainer {
+    width: 50%;
+  }
+
+  .exp-description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .images img {
+    width: 30%;
+  }
+
+  .contact {
+    justify-content: center;
+  }
+
+  .contacts-container {
+    justify-content: center;
+    gap: 10rem;
+  }
+}

@@ -110,6 +110,7 @@ header {
 #personal-photo {
   height: auto;
   width: 200px;
+  border-radius: 10px;
 }
 
 /* Presentacion -------------------------------------------------------------------*/

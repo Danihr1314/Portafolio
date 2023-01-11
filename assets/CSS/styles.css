@@ -1,6 +1,6 @@
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: #020403;
+  background-color: #4b6a77;
   margin: 0;
 }
 
@@ -74,6 +74,10 @@ header {
     color: #dbdbdb;
   }
 
+  .nav {
+    height: 50px;
+  }
+
   .nav-label {
     display: block;
     cursor: pointer;
@@ -81,21 +85,21 @@ header {
 
   .nav-menu {
     position: fixed;
-    top: 62px;
+    top: 50px;
     bottom: 0;
-    background: #000000f3;
+    background: #202020f3;
     width: 100%;
     left: 0;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    clip-path: circle(0 at center);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: clip-path 1s ease-in-out;
   }
 
   .nav-input:checked+.nav-menu {
-    clip-path: circle(100% at center);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
@@ -198,6 +202,23 @@ header {
   justify-content: center;
 }
 
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.cv button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #adadadc5;
+}
+
 /* Habilides ---------------------------------------------------------------------*/
 
 .hability {
@@ -274,7 +295,7 @@ span {
 }
 
 .hab img:hover {
-  transform: translateY(-3%);
+  transform: translateY(-7%);
 }
 
 .space {
@@ -334,7 +355,7 @@ span {
 }
 
 .exp-borders {
-  border-bottom: solid 1px #1f1f1f;
+  border-bottom: solid 1px #ffffff;
   padding: 5px 0 5px 0;
   margin: 0;
 }

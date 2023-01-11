@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="CSS/styles.css" />
-  <link rel="Icons" href="Íconos/" />
-  <link rel="Images" href="Imágenes/" />
+  <link rel="stylesheet" href="./assets/CSS/styles.css" />
+  <link rel="Icons" href="./assets/Iconos/" />
+  <link rel="Images" href="./assets/Imagenes/" />
+  <link rel="documents" href="./assets/documents/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="Iconos/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/Iconos/favicon.png" type="image/x-icon">
   <title>Portafolio</title>
 </head>
 
@@ -27,16 +28,16 @@
         <div class="products-added">
         </div>
         <label for="menu" class="nav-label">
-          <img src="Iconos/bars-solid.svg" class="nav-image" alt="bars-menu">
+          <img src="./assets/Iconos/bars-solid.svg" class="nav-image" alt="bars-menu">
         </label>
         <input type="checkbox" id="menu" class="nav-input">
         <div class="nav-menu">
           <a href="#Home" class="nav-item">Home</a>
-          <a href="#About" class="nav-item">Acerca de mi</a>
-          <a href="#Habilities" class="nav-item">Mis habilidades</a>
-          <a href="#Experience" class="nav-item">Experiencia</a>
-          <a href="#Proyects" class="nav-item">Proyectos</a>
-          <a href="#Contact" class="nav-item">Contacto</a>
+          <a href="#About" class="nav-item">About me</a>
+          <a href="#Habilities" class="nav-item">Habilities</a>
+          <a href="#Experience" class="nav-item">Experience</a>
+          <a href="#Proyects" class="nav-item">Proyects</a>
+          <a href="#Contact" class="nav-item">Contact</a>
         </div>
       </div>
     </nav>
@@ -44,26 +45,24 @@
   <!-- Presentación -->
   <section id="Home">
     <div class="photo">
-      <img src="Imagenes/DHR.jpeg" alt="Perfil image" id="personal-photo" />
+      <img src="./assets/Imagenes/DHR.jpeg" alt="Perfil image" id="personal-photo" />
     </div>
     <div class="name subsection">
       <h2>Hola, soy Daniel</h2>
     </div>
     <div class="presentation title">
-      <h1>Diseñador y<br> desarrollador web</h1>
+      <h1>Desarrollador web<br> Full Stack</h1>
     </div>
   </section>
   <!-- Páginas web -->
   <div class="web-pages">
     <a href="https://www.linkedin.com/in/daniel-henao-rend%C3%B3n-236b4a259/" target="_blank">
-      <img src="./Iconos/linkedin.png" alt="">
+      <img src="./assets/Iconos/linkedin.png" alt="">
     </a>
-    <a href="https://www.instagram.com/daniel.hr1/" target="_blank">
-      <img src="./Iconos/instagram.png" alt="">
+    <a href="https://github.com/Danihr1314" target="_blank">
+      <img src="./assets/Iconos/github.png" alt="">
     </a>
-    <a href="https://twitter.com/DanielHenaoRen1" target="_blank">
-      <img src="./Iconos/twitter.png" alt="">
-    </a>
+    
   </div>
   <!-- Acerca de mí -->
   <section id="About">
@@ -72,13 +71,17 @@
     </div>
     <div class="about-me">
       <p class="paragraph">
-        Soy un joven de 21 años al que le gusta la música, hacer ejercicio, tocar guitarra y
-        aprender nuevas cosas. Soy una persona muy organizada, amistosa y paciente. Vivo en
-        la ciudad de Pereira donde trabajo en un help desk de una empresa distribuidora de
-        fármacos.
+        Soy un persona que le gusta estar a la vanguardia de la tecnología y la programación,
+        me adapto rápido a los cambios, aprendo con facilidad, tengo habilidades para trabajar
+        en equipo y resolver problemas. Con mis conocimientos, mis buenos hábitos y mi forma de
+        ser contribuiré en su compañía.
       </p>
     </div>
     </div>
+  </section>
+  <section class="cv">
+    <h3 class="subtitles">Mi CV</h3>
+    <a href="./assets/documents/DanielHenao_CV.pdf" download><button>Download</button></a>
   </section>
   <br>
   <!-- Mis habilidades -->
@@ -91,13 +94,13 @@
         <div class="habilities1">
           <div>
             <div class="hab">
-              <img src="./Iconos/html-5.png" alt="html logo">
+              <img src="./assets/Iconos/html-5.png" alt="html logo">
             </div>
             <span>HTML 5</span>
           </div>
           <div>
             <div class="hab">
-              <img src="./Iconos/css-3.png" alt="css logo">
+              <img src="./assets/Iconos/css-3.png" alt="css logo">
             </div>
             <span>CSS 3</span>
           </div>
@@ -105,13 +108,13 @@
         <div class="habilities2">
           <div>
             <div class="hab">
-              <img src="./Iconos/js.png" alt="Javascript logo">
+              <img src="./assets/Iconos/js.png" alt="Javascript logo">
             </div>
             <span>Javascript</span>
           </div>
           <div>
             <div class="hab">
-              <img src="./Iconos/react.png" alt="react logo">
+              <img src="./assets/Iconos/react.png" alt="react logo">
             </div>
             <span>React JS</span>
           </div>
@@ -163,9 +166,9 @@
       </h2>
     </div>
     <div class="images">
-      <img src="Imagenes/Rick&Morty Wiky.png" alt="Rick&Morty">
-      <img src="Imagenes/Pokedex.png" alt="Pokedex">
-      <img src="Imagenes/AEterna Shop.png" alt="Ecommerce">
+      <img src="./assets/Imagenes/Rick&Morty Wiky.png" alt="Rick&Morty">
+      <img src="./assets/Imagenes/Pokedex.png" alt="Pokedex">
+      <img src="./assets/Imagenes/AEterna Shop.png" alt="Ecommerce">
     </div>
   </section>
   <div class="space"></div>
@@ -180,18 +183,18 @@
       <div class="Phone">
         <div class="phone-container">
           <a href="tel:+573225281707">
-            <img src="./Iconos/telefono.png" alt="phone icon">
+            <img src="./assets/Iconos/telefono.png" alt="phone icon">
           </a>
         </div>
         <p class="paragraph">
           Numero de celular
-          <span>+57_3225281707</span>
+          <span>3225281707</span>
         </p>
       </div>
       <div class="Email">
         <div class="mail-container">
           <a href="mailto:danihr1314@gmail.com">
-            <img src="./Iconos/email.png" alt="email icon">
+            <img src="./assets/Iconos/email.png" alt="email icon">
           </a>
         </div>
         <p class="paragraph">

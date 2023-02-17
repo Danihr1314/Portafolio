@@ -1,5 +1,5 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: #4b6a77;
   margin: 0;
 }
@@ -39,7 +39,7 @@ header {
   width: 100%;
 }
 
-.nav-input:checked+nav-menu {
+.nav-input:checked + nav-menu {
   background: #000000;
 }
 
@@ -69,7 +69,6 @@ header {
 }
 
 @media (max-width: 768px) {
-
   .nav-item {
     color: #dbdbdb;
   }
@@ -98,7 +97,7 @@ header {
     transition: clip-path 1s ease-in-out;
   }
 
-  .nav-input:checked+.nav-menu {
+  .nav-input:checked + .nav-menu {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
@@ -229,9 +228,10 @@ header {
 
 .hability-icons {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 3rem;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -274,7 +274,7 @@ span {
   padding-top: 15px;
 }
 
-.hability-icons>div {
+.hability-icons > div {
   width: 40%;
   text-align: center;
   display: flex;
@@ -343,14 +343,14 @@ span {
   flex-direction: column;
 }
 
-.exp-description>p {
+.exp-description > p {
   width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
-.exp-description>p>span {
+.exp-description > p > span {
   padding: 0;
 }
 
@@ -375,7 +375,7 @@ span {
   justify-content: space-around;
 }
 
-.images>img {
+.images > img {
   margin: 20px;
   width: 90%;
   height: auto;
@@ -407,7 +407,7 @@ footer {
   text-align: center;
 }
 
-.Phone>p>span {
+.Phone > p > span {
   color: #adadad;
   font-size: 14px;
   font-weight: 400;
@@ -448,7 +448,7 @@ footer {
   text-align: center;
 }
 
-.Email>p>span {
+.Email > p > span {
   color: #adadad;
   font-size: 14px;
   font-weight: 400;
@@ -525,7 +525,6 @@ footer {
   .hability-icons {
     flex-direction: row;
     justify-content: center;
-
   }
 
   .habilities2 {
